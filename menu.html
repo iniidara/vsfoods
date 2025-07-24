@@ -8,6 +8,18 @@
         <script src="display.js"></script>
     </head>
     <body>
+        <div id="form" class="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-70 z-50" style="display:none;">
+            <div class="bg-white rounded-2xl p-8 shadow-2xl w-full max-w-md relative">
+                <button onclick="document.getElementById('form').style.display='none'" class="absolute top-2 right-2 text-black text-xl font-bold">&times;</button>
+                <h2 class="text-2xl font-bold mb-4 text-center">Login</h2>
+                <form>
+                    <input type="text" placeholder="Username" class="w-full mb-3 px-4 py-2 border rounded" />
+                    <input type="password" placeholder="Password" class="w-full mb-3 px-4 py-2 border rounded" />
+                    <button type="submit" class="w-full bg-red-700 text-white py-2 rounded">Login</button>
+                </form>
+            </div>
+        </div>
+    <body>
         <div class="bg-black bg-cover bg-center w-full" style="background-image: url('images/Top view of concept food background stock photo containing above and art, a Food & Drink Photo by Furo Felix Photography.jpeg');">
             <header class="sticky top-0">
                 <nav class="flex flex-col sm:flex-row p-4 gap-4 sm:gap-20 items-center">
@@ -15,7 +27,7 @@
                     <div class="flex flex-col sm:flex-row gap-2 sm:gap-8 items-center w-full sm:w-auto sm:ml-auto">
                         <a href="menu.html" class="text-neutral-200">Menu</a>
                         <a href="contact.html" class="text-neutral-200"> Contact Us</a>
-                        <button class="bg-white px-4 py-2 mt-2 sm:mt-0 rounded-2xl hover:bg-transparent hover:text-white">Login</button>
+                        <button class="bg-white px-4 py-2 mt-2 sm:mt-0 rounded-2xl hover:bg-transparent hover:text-white" onclick="showLogin()">Login</button>
                     </div>
                 </nav>  
             </header>
